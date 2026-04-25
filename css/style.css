@@ -183,9 +183,9 @@ p, li {
 }
 
 .logo-img {
-  height: 36px;
-  width: 36px;
-  min-width: 36px;
+  height: 44px;
+  width: 44px;
+  min-width: 44px;
   border-radius: 4px;
   object-fit: contain;
 }
@@ -200,7 +200,7 @@ p, li {
 
 .logo-name {
   font-family: var(--font-heading);
-  font-size: 0.82rem;
+  font-size: 0.95rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -215,7 +215,7 @@ p, li {
 
 .logo-sub {
   font-family: var(--font-heading);
-  font-size: 0.52rem;
+  font-size: 0.62rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -936,6 +936,52 @@ p, li {
 }
 
 /* ========================================
+   BTN-BLACK — CTA section action button
+   ======================================== */
+
+.btn-black {
+  background: var(--charcoal);
+  border-color: var(--white);
+  color: var(--white);
+}
+
+.btn-black:hover {
+  background: var(--charcoal-light);
+  border-color: var(--gold);
+}
+
+/* ========================================
+   PROFESSIONAL LAYOUT — content left, actions centered
+   ======================================== */
+
+.product-section .container > h2,
+.product-section .container > .lead,
+.why-section .container > h2,
+.why-section .container > .lead,
+.section.texture-concrete .container > h2,
+.section.texture-concrete .container > .lead,
+.section.texture-dots .container > h2,
+.section.texture-dots .container > .lead,
+.section.texture-dots .container > p {
+  text-align: left;
+}
+
+.service-block h3,
+.service-block p {
+  text-align: left;
+}
+
+/* H2 accent rule for content sections */
+.product-section .container > h2,
+.why-section .container > h2,
+.section.texture-concrete .container > h2,
+.section.texture-dots .container > h2 {
+  padding-bottom: 0.6rem;
+  border-bottom: 3px solid var(--red);
+  margin-bottom: 0.25rem;
+}
+
+/* ========================================
    SECTION INTROS (H2 above service grids)
    ======================================== */
 
@@ -968,11 +1014,11 @@ p, li {
   }
 
   .logo-name {
-    font-size: 1rem;
+    font-size: 1.15rem;
   }
 
   .logo-sub {
-    font-size: 0.6rem;
+    font-size: 0.72rem;
   }
 
   .nav-desktop {
