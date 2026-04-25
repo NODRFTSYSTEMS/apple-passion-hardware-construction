@@ -285,12 +285,14 @@ p, li {
   justify-content: center;
   gap: 2rem;
   transform: translateX(100%);
-  transition: transform 0.3s ease;
+  visibility: hidden;
+  transition: transform 0.3s ease, visibility 0.3s;
   border-left: 6px solid var(--red);
 }
 
 .mobile-nav.open {
   transform: translateX(0);
+  visibility: visible;
 }
 
 .mobile-nav a {
@@ -960,6 +962,17 @@ p, li {
   border-top: 3px solid var(--red);
   padding: 0.6rem 0.75rem;
   text-align: center;
+}
+
+/* 3-image grid — 1 col on mobile, 3 cols at 520px+ */
+.img-grid--three {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 520px) {
+  .img-grid--three {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* Photo placeholder — shown when image file is missing */
