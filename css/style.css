@@ -754,7 +754,8 @@ p, li {
 }
 
 .footer-sign {
-  max-width: 500px;
+  width: 100%;
+  max-width: 900px;
   margin: 0 auto 1.5rem;
   border: 3px solid var(--gray-dark);
   border-radius: 6px;
@@ -1168,7 +1169,8 @@ p, li {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .hero-sign {
+  .hero-sign,
+  .footer-sign {
     max-width: 1000px;
   }
 
